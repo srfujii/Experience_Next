@@ -2,20 +2,22 @@
 <h2 class="mt-5 mb-5 ml-5">ExperienceNext</h2>
 <h4>...Connecting you to next-level experiences</h4>
 <div class="container container-fluid mt-5">
-  <ul>
-
+ 
+<ul>
 {{#each experienceProviders as |experience| }}
    <li>
      <div class="row mb-4">
       <div class="col-md-5">
         <h2><a href="/experience/{{experience.id}}">{{experience.provider_name}}</a></h2>
         <p>{{experience.category}} {{experience.city}}</p>
-        <p>{{experience.description}}</p>
       </div>
       <div class="col-md-7">
-      <p>{{blog.blog_content}}</p>
-    </div>
-  </li>
-</div>
+       <p>{{experience.description}}</p>
+       <p>{{format_price experience.price}}</p>
+      </div>
+  </div>
+   </li>
 {{/each}}
+</ul>
+
 </div>
