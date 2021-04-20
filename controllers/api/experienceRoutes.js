@@ -2,8 +2,6 @@ const router = require('express').Router();
 const { Experience, Review } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-// /api/experience/
-// Matt
 
 router.get('/:experiences', async (req, res) => {
     try {
@@ -21,18 +19,32 @@ router.get('/:experiences', async (req, res) => {
     }
 });
 
-router.get('/experiences/:id', async (req, res) => {
+
+router.get('/id/:id', async (req, res) => {
     try {
         const expData = await Experience.findByPk(req.params.id);
         const expId = expData.get({ plain: true })
+        
 
-        res.render('expID',
-        ... expId)
+        res.render('expid', {
+        ...expId,
+        logged_in: req.session.logged_in
+    }); 
     }
     catch (err) {
         res.status(500).json(err);
     }
 });
+
+
+
+
+
+
+
+
+
+
 
 // router.post('/', withAuth, async (req, res) => {
 //   try {
