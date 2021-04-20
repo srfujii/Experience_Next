@@ -20,6 +20,17 @@
         {{#if logged_in}}
         <a class="mr-5" href="/dashboard">Dashboard</a> |
         <a class="mr-5" id="logout" href="#">Logout</a>
+        <div class="dropdown">
+        <button onclick="myFunction()" class="expBtn">Choose an Experience
+        </button>
+        <div class="dropdown-content">
+        <a href="#">Tattoo</a>
+        <a href="#">Personal Chef</a>
+        <a href="#">Massage Therapy</a>
+        <a href="#">Cleaning</a>
+        <a href="#">Exorcisms</a>
+        </div>
+        </div> 
         {{else}}
         <a class="mr-5" href="/login">Login</a>
         {{/if}}
