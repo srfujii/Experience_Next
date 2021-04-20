@@ -896,7 +896,7 @@ a:hover {
 }
 
 .text-light {
-  color: #d9e9e8 !important;
+  color: #cfc9c9 !important;
 }
 
 .text-dark {
@@ -904,7 +904,7 @@ a:hover {
 }
 
 .text-white {
-  color: #ffffff !important;
+  color: #cfc9c9;
 }
 
 .text-black {
@@ -916,12 +916,12 @@ a:hover {
 }
 
 .text-link {
-  color: #1b89bc !important;
+  color: #1b89bc;
 }
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #0b3663 !important;
+  background-color: #0b3663;
 }
 
 .bg-info {
@@ -933,7 +933,7 @@ a:hover {
 }
 
 .bg-light {
-  background-color: #d9e9e8 !important;
+  background-color: #aeaeae !important;
 }
 
 .bg-dark {
@@ -941,7 +941,7 @@ a:hover {
 }
 
 .bg-white {
-  background-color: #ffffff !important;
+  background-color: #aeaeae;
 }
 
 .bg-black {
@@ -1147,7 +1147,7 @@ form .form-input {
   width: 100%;
   padding: 0.75rem;
   color: #1a1a1a;
-  background-color: #ffffff;
+  background-color: silver;
   margin: 0.625rem 0;
   font-size: 1.2rem;
   border: 1px solid #484848;
@@ -1170,6 +1170,7 @@ form [type='radio'] {
 
 .outer-container {
   width: 100%;
+  background-color: rgb(221, 217, 217);
 }
 
 .container {
