@@ -2,8 +2,8 @@ const sequelize = require('../config/connection');
 const { Experience, Review, User } = require('../models');
 
 const experienceData = require('./Experiences.json');
-const userData = require('./blogPostData.json');
-const reviewData = require('./commentData.json');
+const userData = require('./userData.json');
+const reviewData = require('./Review.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
