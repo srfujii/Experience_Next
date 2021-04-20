@@ -1,23 +1,23 @@
 const sequelize = require('../config/connection');
-const { Author, BlogPost, Comment } = require('../models');
+const { Experience, Review, User } = require('../models');
 
-const authorData = require('./authorData.json');
-const blogPostData = require('./blogPostData.json');
-const commentData = require('./commentData.json');
+const experienceData = require('./Experiences.json');
+const userData = require('./userData.json');
+const reviewData = require('./Review.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  const authors = await Author.bulkCreate(authorData, {
+  const experience = await Experience.bulkCreate(experienceData, {
     individualHooks: true,
     returning: true,
   });
 
-  const blogPosts = await BlogPost.bulkCreate(blogPostData, {
+  const user = await User.bulkCreate(userData, {
     returning: true,
   });
 
-  const comments = await Comment.bulkCreate(commentData, {
+  const reviews = await Review.bulkCreate(reviewData, {
     returning: true,
   });
 
