@@ -33,4 +33,4 @@ Review.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
-module.exports = { User, Experience, Review };
+module.exports = { User, Experience, Review, UserExperience };
