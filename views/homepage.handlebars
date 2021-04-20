@@ -5,6 +5,8 @@
  
 <ul>
 {{#each experienceProviders as |experience| }}
+  <li>
+    <div class="row mb-4">
    <li>
      <div class="row mb-4">
       <div class="col-md-5">
@@ -12,6 +14,11 @@
         <p>{{experience.category}} {{experience.city}}</p>
       </div>
       <div class="col-md-7">
+      <p>{{experience.description}}</p>
+      <p>{{format_price experience.price}}</p>
+      </div>
+  </div>
+  </li>
        <p>{{experience.description}}</p>
        <p>{{format_price experience.price}}</p>
       </div>
