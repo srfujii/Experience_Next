@@ -373,6 +373,7 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
+  border-radius: 4px;
 }
 
 h2 {
@@ -921,7 +922,7 @@ a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #0b3663;
+  background-color: transparent;
 }
 
 .bg-info {
@@ -937,7 +938,7 @@ a:hover {
 }
 
 .bg-dark {
-  background-color: #142340 !important;
+  background-color: black;
 }
 
 .bg-white {
@@ -1013,7 +1014,7 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #2d3e50;
+  background-color: transparent;
   color: #d9e9e8;
 }
 
@@ -1049,7 +1050,7 @@ a:hover {
 }
 
 .btn.btn-dark {
-  background-color: #1a1a1a;
+  background-color: transparent;
   color: #d9e9e8;
 }
 

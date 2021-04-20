@@ -1,5 +1,12 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-
+li {
+  width: 47%;
+  padding-right: 1%;
+  border: 1px solid black;
+}
 
 header, .project:not(:last-child) {
   border-bottom: 4px solid #ccc;
@@ -11,18 +18,19 @@ h1 {
 }
 
 h2 {
-  color: transparent;
+  color: black;
 }
 
 h2 a {
-  color: transparent;
+  color: black;
 }
 
 nav a {
   font-weight: 900;
   font-size: 150%;
   color: silver;
-  background-color: #142340;
+  background-color: transparent;
+  border-radius: 4px;
 }
 
 nav a:hover {
@@ -53,7 +61,7 @@ nav a:hover {
 }
 
 .jumbotron {
-  background-image: url('../img/maybe2.jpg');
+  background-image: url('../img/maybe3.jpg');
   width: 100%;
   height: 100px;
   background-color: silver;
@@ -110,20 +118,21 @@ nav a:hover {
 
 .dropdown-content a:hover {
   background-color: #8adbe3 ;
+  color: black;
   text-align: center;
   
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-
-}
+  background-color: black;
+  }
 
 .expBtn {
-  background-color: #142340;
+  background-color: transparent;
   color: silver;
   font-size: 150%;
-  font-weight: bolder;
+  font-weight: 900;
   border: none;
   padding-right: 20px;
   padding-bottom: 10px;
