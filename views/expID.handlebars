@@ -1,3 +1,6 @@
+<link href="https://calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://calendly.com/assets/external/widget.js" type="text/javascript"></script>
+
 <div class="container container-fluid mt-5">
     <div>
 
@@ -5,8 +8,9 @@
     <div class="expForm">
         <div>
             <div >
-                <div class="col-md-2"><img src="{{logo_url}}" /></div>
+                
                 <h2>{{provider_name}}</h2>
+                <div class="expLogo"><img src="{{logo_url}}" /></div>
                 <br>
                 <h4>{{description}}</h4>
                 <br>
@@ -16,25 +20,13 @@
         </div>
     </div>
 </div>
-<div class="container">
+<div class="expForm">
     <h2>Request an Experience!</h2>
-        <form class="requestForm" action="action_page.php">
-
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="lname">Phone Number</label>
-            <input type="text" id="pnumber" name="phonenumber" placeholder="***-***-****">
-
-            <label for="subject">What would you like done?</label>
-            <textarea id="subject" name="subject" placeholder="Experience Explanation" style="height:200px"></textarea>
-
-            <button class="btn btn-primary" type="submit" onclick="clicked(event)">Request</button>
-
-        </form>
+    <div>
+        
+        <div><p><button class="btn btn-primary" onclick="Calendly.showPopupWidget('https://calendly.com/experience-next/60-minute-experience');return false;">Book today!</button></p></div>
+        
+    </div>    
 </div>
 
 

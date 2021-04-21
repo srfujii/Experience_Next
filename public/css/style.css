@@ -159,7 +159,18 @@ input[type=submit]:hover {
   margin-bottom: 16px; 
   resize: vertical 
 }
-  ul.no-bullets {
+
+.expLogo {
+  text-align: center;
+  width: 100%; 
+  padding: 12px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical  
+}
+
+ul.no-bullets {
   list-style-type: none;
 }
 
