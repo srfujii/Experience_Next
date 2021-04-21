@@ -919,6 +919,10 @@ a:hover {
   color: #1b89bc !important;
 }
 
+.text-green {
+  color: green !important;
+}
+
 /* BACKGROUND UTILS */
 .bg-primary {
   background-color: #0b3663 !important;
