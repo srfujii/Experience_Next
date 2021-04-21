@@ -1,0 +1,50 @@
+[
+  {
+    "provider_name": "Sharpp Tattoo",
+    "description": "Looking for a tattoo that isn't dull? Look no further. Sharpp tattoo has the sharpest tattoo artist creating the sharpest tattoos.",
+    "category": "Tattoo",
+    "price": 25.50,
+    "city": "Houston",
+    "logo_url": "/img/tattoo-studio.png"
+  },
+  {
+    "provider_name": "Chef Leon Walker",
+    "description": "Chef Leon Walker is a 5 star chef known for his roll on the hit television series, Below Deck.  Leaving the sea's behind, Chef Leon is now a home personal chef ready for you to hire!",
+    "category": "Personal Chef",
+    "price": 35.00,
+    "city": "Austin",
+    "logo_url": "/img/cooking.png"
+  },
+  {
+    "provider_name": "Miracle Massage Therapy",
+    "description": "Mobile massage therapy is a must in todays pandemic.  Miracle Massage Therapy is here to help you stay relaxed while in quarantine.",
+    "category": "Massage",
+    "price": 15.50,
+    "city": "Houston",
+    "logo_url": "/img/massage.png"
+  },
+  {
+    "provider_name": "Grime Time",
+    "description": "Tired of cleaning up after everybody in your family? Well stop!! Just call Grime Time! We'll send out are team of professional cleaners to improve your living space.",
+    "category": "House Cleaning",
+    "price": 21.00,
+    "city": "Dallas",
+    "logo_url": "/img/mop.png"
+  },
+  {
+    "provider_name": "Rose's Exorcism",
+    "description": "You were messing around with a Ouija board weren't you? No worries, call Rose Excorsim's",
+    "category": "Exorcism",
+    "price": 15.50,
+    "city": "San Antonio",
+    "logo_url": "/img/ghost-castle.png"
+  },
+  {
+    "provider_name": "Taboo Tattoo",
+    "description": "Want a tattoo? Cool! We can do that. ",
+    "category": "Tattoo",
+    "price": 10.00,
+    "city": "Houston",
+    "logo_url": "/img/tattoo-studio.png"
+  }
+]
