@@ -4,7 +4,7 @@
 
 li {
   width: 47%;
-  padding-right: 1%;
+  padding: 5%;
   border: 1px solid black;
 }
 
@@ -61,10 +61,13 @@ nav a:hover {
 }
 
 .jumbotron {
-  background-image: url('../img/maybe3.jpg');
+  background-image: url('../img/maybe2.jpg');
   width: 100%;
   height: 100px;
   background-color: silver;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
 }
 
 .site {
