@@ -27,6 +27,9 @@ Experience.init(
     city: {
       type: DataTypes.STRING,
     },
+    logo_url: {
+      type: DataTypes.STRING,
+    },
   },
   {
     sequelize,

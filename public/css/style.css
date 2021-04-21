@@ -148,3 +148,10 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
+ul.no-bullets {
+  list-style-type: none;
+}
+
+li.borders {
+  border-bottom: 1px solid black;
+}
