@@ -1,0 +1,22 @@
+[
+  {
+    "user_id": 1,
+    "experience_id": 2
+  },
+  {
+    "user_id": 2,
+    "experience_id": 1
+  },
+  {
+    "user_id": 2,
+    "experience_id": 3
+  },
+  {
+    "user_id": 2,
+    "experience_id": 6
+  },
+  {
+    "user_id": 3,
+    "experience_id": 5
+  }
+]

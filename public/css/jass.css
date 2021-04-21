@@ -922,6 +922,10 @@ a:hover {
   color: #1b89bc;
 }
 
+.text-green {
+  color: green !important;
+}
+
 /* BACKGROUND UTILS */
 .bg-primary {
   background-color: transparent;
@@ -987,7 +991,7 @@ a:hover {
   border: 1px solid transparent;
   outline: none;
   color: #1a1a1a;
-  background-color: #aeaeae;
+  background-color: black;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
@@ -1016,8 +1020,8 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: transparent;
-  color: #d9e9e8;
+  background-color: silver;
+  color: black;
 }
 
 .btn.btn-primary:hover {

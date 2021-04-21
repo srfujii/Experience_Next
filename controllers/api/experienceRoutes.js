@@ -1,15 +1,50 @@
 const router = require('express').Router();
-const { Experience, Comment } = require('../../models');
+const { Experience, Review } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-// /api/experience/
-// Matt
 
-// router.get('/', withAuth, async (req, res) => {
-//   // If the user is logged in, render the create blog page
-//     res.render('createblogpost', {logged_in: true});  
-//     return;
-// });
+router.get('/:experiences', async (req, res) => {
+    try {
+        
+        const expData = await Experience.findAll({where: {category: req.params.experiences}});
+
+        const expCategory = expData.map((category) => category.get({ plain: true }));
+        console.log(expCategory)
+    res.render('experiences', {
+        expCategory,
+        logged_in: req.session.logged_in
+    });
+    } catch (err) {
+    res.status(400).json(err);
+    }
+});
+
+
+router.get('/id/:id', async (req, res) => {
+    try {
+        const expData = await Experience.findByPk(req.params.id);
+        const expId = expData.get({ plain: true })
+        
+
+        res.render('expid', {
+        ...expId,
+        logged_in: req.session.logged_in
+    }); 
+    }
+    catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+
+
+
+
+
+
+
+
+
 
 // router.post('/', withAuth, async (req, res) => {
 //   try {

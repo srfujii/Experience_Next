@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Experience, User, Comment } = require('../models');
+const { Experience, User, Review, UserExperience } = require('../models');
 const withAuth = require('../utils/auth');
 
 
@@ -54,12 +54,12 @@ router.get('/', async (req, res) => {
 // Use withAuth middleware to prevent access to route
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
-    // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-      // include: [{ model: Experience }],
-    });
-
+       // Find the logged in user based on the session ID
+       const userData = await User.findByPk(req.session.user_id, {
+        attributes: { exclude: ['password'] },
+        include: [{ model: Experience, through: UserExperience, as: 'user_experience' }],
+      });
+  
     const user = userData.get({ plain: true });
 
     res.render('dashboard', 
