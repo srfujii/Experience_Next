@@ -138,11 +138,19 @@ nav a:hover {
   -webkit-text-stroke-width: .05px;
   -webkit-text-stroke-color: slategrey;
   text-align: center;
+<<<<<<< HEAD
   font-size: 2vw;
+=======
+  
+>>>>>>> e08ea7e92e2c4e1844f9a4b3d3aa7f50b68f17d0
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+<<<<<<< HEAD
+=======
+  font-size: 2vw;
+>>>>>>> e08ea7e92e2c4e1844f9a4b3d3aa7f50b68f17d0
   color: black;
   font-size: 2vw;
   }
@@ -198,6 +206,28 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+.expForm {
+  text-align: center;
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+.expLogo {
+  text-align: center;
+  width: 100%; 
+  padding: 12px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical  
 }
 
 ul.no-bullets {
