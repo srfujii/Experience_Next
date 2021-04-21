@@ -159,3 +159,10 @@ input[type=submit]:hover {
   margin-bottom: 16px; 
   resize: vertical 
 }
+  ul.no-bullets {
+  list-style-type: none;
+}
+
+li.borders {
+  border-bottom: 1px solid black;
+}
