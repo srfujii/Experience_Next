@@ -3,9 +3,9 @@
 
   ## Description
 
-  This full stack web application is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. It follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication. The MYSQL database itself is made up of three tables, Author, BlogPost, and Comment, each of which are modeled using sequelize and interacted with using our Express api routes. 
+  This full stack web application is a service based web application used to help users find certain services provided by approved service providers.  It follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication. The MYSQL database itself is made up of four tables, User, Experiences, Review and User Experiences, each of which are modeled using sequelize and interacted with using our Express api routes. 
 
-  Users can register as new authors or login to an existing author account. They can create new blog posts, edit and delete blog posts, and add new comments to any previously created blog post.
+  Users can sign in and use the drop down menu to select which "Experience" they would like.  Once the experience is chosen, the user will then be provided a list of all the service providers under that category.  The user can then choose a service provider and book a time slot with them.  
 
 
   ## Table of Contents
