@@ -26,7 +26,7 @@ router.get('/id/:id', async (req, res) => {
         const expId = expData.get({ plain: true })
         
 
-        res.render('expid', {
+        res.render('expID', {
         ...expId,
         logged_in: req.session.logged_in
     }); 
