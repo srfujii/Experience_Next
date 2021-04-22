@@ -8,58 +8,26 @@
 <h2 class="mt-5 mb-5 ml-5">Here are your Recent Experiences:</h2>
 <div class="container container-fluid mt-5">
 
+<ul class="no-bullets">
 {{#each user_experience as |user| }}
-<div class="row mb-4">
-  <div class="col-md-5">
-    <h2>
-      <a href="/api/experience/id/{{user.id}}">{{user.provider_name}}</a>
-    </h2>
-    <p>City: {{user.city}}</p>
-    <p><Price: {{user.price}}</p>
+  <li class="borders pt-5">
+    <div class="row mb-4">
+      <div class="col-md-2"><img src="{{user.logo_url}}" /></div>
+      <div class="col-md-5">
+        <h2><a href="/api/experience/id/{{user.id}}">{{user.provider_name}}</a></h2>
+        <h5>{{user.city}}</h5>
+      </div>
+      <div class="col-md-5">
+      <h6>{{user.category}}:</h6>
+      <p>{{user.description}}</p>
+      <h6 class="text-green">{{user.price}}</h6>
+      <p><button class="btn btn-primary" onclick="Calendly.showPopupWidget('https://calendly.com/experience-next/60-minute-experience');return false;">Book Again!</button></p>
+      </div>
   </div>
-  <div class="col-md-7">
-    <p>
-      {{user.description}}
-    </p>
-    <p><button class="btn btn-primary" onclick="Calendly.showPopupWidget('https://calendly.com/experience-next/60-minute-experience');return false;">Book Again!</button></p>
-  </div>
-</div>
+  </li>
 {{/each}}
+</ul>
 
 {{!-- <a href="/api/blog"><button class="btn btn-primary">Book a New Experience!</button></a> --}}
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  {{#if projects.length}}
-  <div class="col-md-6 project-list">
-    <h3>Current Projects:</h3>
-
-    {{#each projects as |project|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
-  </div>
-  {{/if}}
-</div>
-</div>
-
-

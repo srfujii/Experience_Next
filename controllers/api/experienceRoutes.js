@@ -19,14 +19,14 @@ router.get('/:experiences', async (req, res) => {
     }
 });
 
-
+// This is the detailed experience route
 router.get('/id/:id', async (req, res) => {
     try {
         const expData = await Experience.findByPk(req.params.id);
         const expId = expData.get({ plain: true })
         
 
-        res.render('expid', {
+        res.render('booking', {
         ...expId,
         logged_in: req.session.logged_in
     }); 
@@ -35,6 +35,19 @@ router.get('/id/:id', async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+router.post('/', async (req, res) => {
+    try {
+        const experiences = await Experience.create(req.body);
+
+
+        res.status(200).json(experiences);
+
+    } catch (err) {
+        res.status(400).json(err);
+    }
+});
+
 
 
 

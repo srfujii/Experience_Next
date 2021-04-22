@@ -18,6 +18,16 @@ header, .project:not(:last-child) {
 
 h1 {
   /* font-size: 600%; */
+  font-size: 3vw; 
+  font-weight: 700;
+  color: grey;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: slategray;
+  border-radius: 4px;
+}
+
+h1 {
+  /* font-size: 600%; */
   font-size: 3.1vw; 
   font-weight: 700;
   color: rgb(155, 76, 177);
