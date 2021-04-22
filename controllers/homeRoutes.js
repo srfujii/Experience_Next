@@ -91,4 +91,10 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
+router.get('/providersignup', (req, res) => {
+
+  res.render('servicesignup');
+});
+
+
 module.exports = router;
