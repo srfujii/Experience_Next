@@ -3,7 +3,7 @@ const { Experience, Review } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 
-router.get('/:experiences', async (req, res) => {
+router.get('/:experiences',withAuth, async (req, res) => {
     try {
         
         const expData = await Experience.findAll({where: {category: req.params.experiences}});
@@ -20,7 +20,7 @@ router.get('/:experiences', async (req, res) => {
 });
 
 // This is the detailed experience route
-router.get('/id/:id', async (req, res) => {
+router.get('/id/:id',withAuth, async (req, res) => {
     try {
         const expData = await Experience.findByPk(req.params.id);
         const expId = expData.get({ plain: true })
