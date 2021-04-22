@@ -5,7 +5,7 @@
     "category": "Tattoo",
     "price": 25.50,
     "city": "Houston",
-    "logo_url": "/img/tattoo-studio.png"
+    "logo_url": "/img/Tattoo.png"
   },
   {
     "provider_name": "Chef Leon Walker",
@@ -13,7 +13,7 @@
     "category": "Personal Chef",
     "price": 35.00,
     "city": "Austin",
-    "logo_url": "/img/cooking.png"
+    "logo_url": "/img/Personal Chef.png"
   },
   {
     "provider_name": "Miracle Massage Therapy",
@@ -21,7 +21,7 @@
     "category": "Massage",
     "price": 15.50,
     "city": "Houston",
-    "logo_url": "/img/massage.png"
+    "logo_url": "/img/Massage.png"
   },
   {
     "provider_name": "Grime Time",
@@ -29,7 +29,7 @@
     "category": "House Cleaning",
     "price": 21.00,
     "city": "Dallas",
-    "logo_url": "/img/mop.png"
+    "logo_url": "/img/House Cleaning.png"
   },
   {
     "provider_name": "Rose's Exorcism",
@@ -37,7 +37,7 @@
     "category": "Exorcism",
     "price": 15.50,
     "city": "San Antonio",
-    "logo_url": "/img/ghost-castle.png"
+    "logo_url": "/img/Exorcism.png"
   },
   {
     "provider_name": "Taboo Tattoo",
@@ -45,6 +45,6 @@
     "category": "Tattoo",
     "price": 10.00,
     "city": "Houston",
-    "logo_url": "/img/tattoo-studio.png"
+    "logo_url": "/img/Tattoo.png"
   }
 ]
